@@ -7,6 +7,9 @@ Salesforce Tools for quick development and best practices
 
 Example: 
 
+    User u = DataFactory.anUser().build();
+    insert u;
+    
     Account acc = DataFactory.anAccount()
         .withType('Customer')
         .withOwner(u.Id)
